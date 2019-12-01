@@ -1,0 +1,10 @@
+1、c++11新增类型auto，可以由编译器解析表达式的类型，使用auto定义变量时，必须初始化； 注意const,指针，引用等类型在使用auto解析时的注意事项；
+auto a = 300; // a is an int
+2、C++11新增类型decltype,可以由编译器解析表达式的类型，编译器分析表达式的类型，并给当前变量声明，注意const,指针，引用等类型在使用decltype解析时的注意事项
+int a = 20;
+decltype(a) b; // b is an int, becase a is an int
+3、c++11中使用using来定义别名（之前是用typedef）
+Class Sale_Item {...}
+using SI = Sale_Item;
+4、c++11中用nullptr表示空指针，如果还是用NULL，则需要包含头文件cstdlib;
+5、c++11中可以用constexpr来作类型限定符，定义的变量必须是const变量；
